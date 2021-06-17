@@ -1,0 +1,12 @@
+.Footer-social-icon-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.Footer-social-icon{
+    margin-right: 25px;
+}
+
+.Footer-social-icon:last-child{
+    margin-right: 0px;
+}

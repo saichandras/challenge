@@ -11,7 +11,13 @@ const FontIcon = (props) => {
 
     return (
         <>
-            <a href="#"><FontAwesomeIcon style={styles.fontAwesomeIcon} onClick={props.handleClick} icon={props.icon}/></a>
+            <a href="#">
+                <FontAwesomeIcon
+                    style={styles.fontAwesomeIcon}
+                    onClick={props.handleClick} icon={props.icon}
+                    size={props.size}
+                />
+            </a>
         </>
     );
 };

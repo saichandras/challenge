@@ -10,13 +10,23 @@
 .App-container{
   background-color: white;
   border-radius: 10px;
-  padding: 40px 25px;
-  display: flex;
-  flex-direction: row;
+  padding: 30px 25px;
+  /*display: flex;*/
+  /*flex-direction: row;*/
   width: 800px;
-  height: 500px;
+  height: auto;
 }
 
+.App-container-info-contact{
+  display: flex;
+  flex-direction: row;
+}
+
+.App-container-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
 
 .App-loader {
   border: 7px solid white; /* Light grey */
@@ -31,5 +41,48 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 866px) {
+  .App-container{
+    background-color: white;
+    border-radius: 10px;
+    width: 380px;
+    height: auto;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+  }
+
+  .App-container-info-contact{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .App-container-footer{
+    margin-top: 30px;
+    border-top: 1.3px solid lightgray;
+  }
+}
+
+@media (max-width: 446px) {
+  .App {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .App-container{
+    border-radius: 0;
+    padding: 30px 25px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 400px;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+  }
+
 }
 

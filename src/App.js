@@ -3,6 +3,8 @@ import './App.css';
 import Information from "./components/information/Information";
 import ContactMe from "./components/contactMe/ContactMe";
 import axios from "axios";
+import {ToastContainer} from "react-toast";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
     const [userData, setUserData] = useState([]);
@@ -34,9 +36,15 @@ const App = () => {
     return (
         <div className="App">
             <div className="App-container">
-                <Information userData={userData}/>
-                <ContactMe/>
+                <div className="App-container-info-contact">
+                    <Information userData={userData}/>
+                    <ContactMe/>
+                </div>
+                <div className="App-container-footer">
+                    <Footer userData={userData}/>
+                </div>
             </div>
+            <ToastContainer position="top-center" delay={3000}/>
         </div>
     );
 };

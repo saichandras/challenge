@@ -12,3 +12,8 @@
     width: 50%;
 }
 
+@media (max-width: 866px) {
+    .ContactMe-container{
+        width: 100%;
+    }
+}
