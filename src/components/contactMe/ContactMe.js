@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './ContactMe.css';
 import TextInputs from "../textInputs/TextInputs";
 import TextAreaInput from "../textAreaInput/TextAreaInput";
+import ContactSubmitButton from "../contactSubmitButton/ContactSubmitButton";
 
 const ContactMe = () => {
     const [email, setEmail] = useState("");
@@ -26,7 +27,7 @@ const ContactMe = () => {
                     message={message}
                     onMessageChange={(msg) => setMessage(msg.target.value)}
                 />
-                {/*Button*/}
+                <ContactSubmitButton />
             </form>
         </div>
     );
