@@ -13,7 +13,7 @@
 }
 .front {
     display: block;
-    padding: 12px 100px;
+    padding: 10px 100px;
     border-radius: 12px;
     font-size: 1rem;
     background: hsl(345deg 100% 47%);
