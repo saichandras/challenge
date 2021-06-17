@@ -1,0 +1,19 @@
+.App {
+  background-color: #60a9ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App-container{
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 500px;
+}
+
