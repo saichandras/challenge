@@ -1,0 +1,14 @@
+.ContactMe-heading{
+    font-size: 20px;
+    display: flex;
+    align-self: start;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.ContactMe-container{
+    width: 50%;
+}
+
