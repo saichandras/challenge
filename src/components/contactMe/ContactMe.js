@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import './ContactMe.css';
 import TextInputs from "../textInputs/TextInputs";
+import TextAreaInput from "../textAreaInput/TextAreaInput";
 
 const ContactMe = () => {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
+    const [message, setMessage] = useState("");
 
     return (
         <div className="ContactMe-container">
@@ -20,7 +22,10 @@ const ContactMe = () => {
                         setEmail(email.target.value);
                     }}
                 />
-                {/*Text Area Input*/}
+                <TextAreaInput
+                    message={message}
+                    onMessageChange={(msg) => setMessage(msg.target.value)}
+                />
                 {/*Button*/}
             </form>
         </div>
