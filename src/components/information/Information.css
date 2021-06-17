@@ -41,3 +41,31 @@
 .Information-icons-container-row:last-child{
     margin-bottom: 0;
 }
+
+/*Information Details Starts Here*/
+
+.Information-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.Information-details-text-container{
+    margin-top: 15px;
+}
+
+.Information-details-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Information-details-subtext-container{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.Information-details-subtext{
+
+}

@@ -1,8 +1,7 @@
 import React from 'react';
 import './Information.css';
 import {faAddressBook, faMap, faEnvelope, faPhone, faBirthdayCake, faKey} from '@fortawesome/free-solid-svg-icons'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
+import FontIcon from "../general/FontIcon";
 
 const Information = ({userData}) => {
 
@@ -22,25 +21,27 @@ const Information = ({userData}) => {
                 </div>
                 <div className="Information-icons-container">
                     <div className="Information-icons-container-row">
-                        <FontAwesomeIcon style={styles.fontAwesomeIcon} icon={faAddressBook}/>
-                        <FontAwesomeIcon style={styles.fontAwesomeIcon} icon={faMap}/>
+                        <FontIcon icon ={faAddressBook}/>
+                        <FontIcon icon ={faMap}/>
                     </div>
                     <div className="Information-icons-container-row">
-                        <FontAwesomeIcon style={styles.fontAwesomeIcon} icon={faEnvelope}/>
-                        <FontAwesomeIcon style={styles.fontAwesomeIcon} icon={faPhone}/>
+                        <FontIcon icon ={faEnvelope}/>
+                        <FontIcon icon ={faPhone}/>
                     </div>
                     <div className="Information-icons-container-row">
-                        <FontAwesomeIcon style={styles.fontAwesomeIcon} icon={faBirthdayCake}/>
-                        <FontAwesomeIcon style={styles.fontAwesomeIcon} icon={faKey}/>
+                        <FontIcon icon ={faBirthdayCake}/>
+                        <FontIcon icon ={faKey}/>
                     </div>
                 </div>
             </div>
             <div className="Information-details">
                 <div className="Information-details-text-container">
-
+                    <span className="Information-details-text">Details</span>
                 </div>
                 <div className="Information-details-subtext-container">
-
+                    <span className="Information-details-subtext">
+                        {`My name is ${userData.name.title} ${userData.name.first} ${userData.name.last} and I live in ${userData.location.city}, ${userData.location.state}, ${userData.location.country}`}
+                    </span>
                 </div>
             </div>
         </div>
