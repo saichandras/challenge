@@ -4,6 +4,7 @@ import TextInputs from "../textInputs/TextInputs";
 import TextAreaInput from "../textAreaInput/TextAreaInput";
 import ContactSubmitButton from "../contactSubmitButton/ContactSubmitButton";
 import { toast } from "react-toast";
+import Constants from "../../helper/Constants";
 import emailjs from 'emailjs-com';
 
 const ContactMe = () => {
@@ -37,14 +38,14 @@ const ContactMe = () => {
             //Email Logic Here
 
 
-            toast.success("Email sent successfully!", {
+            toast.success(Constants.emailSentMessage, {
                 backgroundColor: "green"
             });
             setEmail("");
             setName("");
             setMessage("");
         }catch{
-            return toast.error("Email not sent, please try again!", {
+            return toast.error(Constants.emailErrorMessage, {
                 backgroundColor: "#F54748"
             });
         }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './TextAreaInput.css';
+import Constants from "../../helper/Constants";
 
 const TextAreaInput = ({message, onMessageChange}) => {
     return (
@@ -10,7 +11,7 @@ const TextAreaInput = ({message, onMessageChange}) => {
             onChange={onMessageChange}
             rows="5"
             cols="33"
-            placeholder="How can I help?"
+            placeholder= {Constants.textAreaPlaceHolder}
         />
     );
 }
